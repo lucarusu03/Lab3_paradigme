@@ -3,6 +3,7 @@ package ro.ulbs.paradigme.lab3;
 import ro.ulbs.paradigme.lab3.forms.Circle;
 import ro.ulbs.paradigme.lab3.forms.Square;
 import ro.ulbs.paradigme.lab3.forms.Triangle;
+import ro.ulbs.paradigme.lab3.util.PasswordMaker;
 
 import static ro.ulbs.paradigme.lab3.forms.Form.getCounter;
 
@@ -23,5 +24,8 @@ public class Main {
         Triangle tri3 = new Triangle(1.1F, 2.0F, "brown");
         System.out.println("Triangle3 equals to Triangle1: " + tri.equals(tri3));
         System.out.println("COUNTER: "+ getCounter() );
+
+        PasswordMaker pm=new PasswordMaker("Luca");
+        System.out.println(pm.getPassword());
     }
 }
