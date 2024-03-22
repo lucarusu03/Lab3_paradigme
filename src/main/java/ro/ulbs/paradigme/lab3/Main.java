@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Triangle3 equals to Triangle1: " + tri.equals(tri3));
         System.out.println("COUNTER: "+ getCounter() );
 
-        PasswordMaker pm=new PasswordMaker("Luca");
+        PasswordMaker pm = PasswordMaker.getInstance("Luca");
         System.out.println(pm.getPassword());
     }
 }

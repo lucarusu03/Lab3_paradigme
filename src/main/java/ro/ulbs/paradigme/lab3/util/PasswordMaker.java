@@ -12,8 +12,17 @@ public class PasswordMaker {
 
     private final String MAGIC_STRING = sr.randomString(20);
 
-    public PasswordMaker(String name){
+    private static PasswordMaker instance = null;
+
+    private PasswordMaker(String name){
         this.name=name;
+    }
+
+    public static PasswordMaker getInstance(String name){
+        if(instance==null){
+            instance=new PasswordMaker(name);
+        }
+        return instance;
     }
 
     public String getPassword(){
