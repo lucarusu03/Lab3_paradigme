@@ -27,5 +27,7 @@ public class Main {
 
         PasswordMaker pm = PasswordMaker.getInstance("Luca");
         System.out.println(pm.getPassword());
+
+        System.out.println("TEST!");
     }
 }
